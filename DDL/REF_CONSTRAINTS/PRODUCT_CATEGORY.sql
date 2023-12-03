@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table PRODUCT_CATEGORY
+--------------------------------------------------------
+
+  ALTER TABLE "C##IRTIZA"."PRODUCT_CATEGORY" ADD CONSTRAINT "FK_OWNER" FOREIGN KEY ("OWNER")
+	  REFERENCES "C##IRTIZA"."SELLER" ("SELLER_ID") ENABLE;
+  ALTER TABLE "C##IRTIZA"."PRODUCT_CATEGORY" ADD CONSTRAINT "FK_PRODUCT_CATEGORY_CATEGORY" FOREIGN KEY ("CATEGORY")
+	  REFERENCES "C##IRTIZA"."CATEGORY" ("CATEGORY_NAME") ENABLE;
